@@ -1,9 +1,19 @@
-const projects = () => {
+import { projects } from "../data";
+import ProjectCard from "../components/ProjectCard";
+
+const Projects = () => {
   return (
     <div className="p-4">
-      project page
+      <nav>Navbar</nav>
     </div>
+    {
+      projects.map(project=>(
+        <div>
+          <ProjectCard />
+        </div>
+      ))
+    }
   )
 }
 
-export default projects
+export default Projects

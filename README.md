@@ -15,3 +15,6 @@ npx tailwindcss init -p
 5. React iconをインストールする
 npm i react-icons
 # portfolio-web-mitsu
+
+6. nextのテーマをカスタマイズする
+npm i next-themes
