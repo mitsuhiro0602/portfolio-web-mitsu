@@ -2,6 +2,7 @@ import { AiFillGithub, AiFillTwitterCircle, AiFillInstagram } from 'react-icons/
 import { GoLocation } from 'react-icons/go';
 import { GiTie } from 'react-icons/gi';
 import { useTheme } from 'next-themes';
+import Image from 'next/image';
 
 const Sidebar = () => {
   
@@ -13,10 +14,14 @@ const Sidebar = () => {
   return (
     <>
       <div>
-        <img 
-          src="./images/01.png" 
+        <Image 
+          src="/images/01.png" 
           alt="user avatar"
-          className="w-32 h-32 mx-auto rounded-full"
+          className="mx-auto rounded-full"
+          height="128px"
+          width="128px"
+          layout="intrinsic"
+          quality="100"
         />
         <h3 className="my-4 text-3xl font-medium tracking-wider font-kaushan">
           <span>Mitsuhiro</span>
