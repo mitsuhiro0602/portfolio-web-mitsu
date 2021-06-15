@@ -1,15 +1,17 @@
-import { FunctionComponent } from "react"
-import { Category } from "../type"
+import { FunctionComponent } from "react";
+import { Category } from "../type";
 
 export const NavItem: FunctionComponent<{
-  value:Category | 'all';
-  handlerFilterCategory:Function;
-  active: string
+  value: Category | "all";
+  handlerFilterCategory: Function;
+  active: string;
 }> = ({ value, handlerFilterCategory, active }) => {
-  let className = "capitalize cursor-pointer hover:text-green"
-  if(active === value ) className += "text-green";
+  let className = "capitalize cursor-pointer hover:text-green";
+  console.log
+  if (active === value) className += " text-green";
+
   return (
-    <li className={className} onClick={()=>handlerFilterCategory(value)}>
+    <li className={className} onClick={() => handlerFilterCategory(value)}>
       {value}
     </li>
   );
@@ -17,7 +19,7 @@ export const NavItem: FunctionComponent<{
 
 const ProjectsNavbar: FunctionComponent<{
   handlerFilterCategory: Function;
-  active:string;
+  active: string;
 }> = (props) => {
   return (
     <div className="flex px-3 py-2 space-x-3 overflow-x-auto list-none">
@@ -28,7 +30,7 @@ const ProjectsNavbar: FunctionComponent<{
       <NavItem value="wordpress" {...props} />
       <NavItem value="Next.js" {...props} />
     </div>
-  )
-}
+  );
+};
 
-export default ProjectsNavbar
+export default ProjectsNavbar;
