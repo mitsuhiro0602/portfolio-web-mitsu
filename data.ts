@@ -45,12 +45,7 @@ export const languages: ISkill[] = [
     Icon:BsCircleFill
   },
   {
-    name:'html',
-    level: '90%',
-    Icon:BsCircleFill
-  },
-  {
-    name:'pug',
+    name:'html(pug)',
     level: '90%',
     Icon:BsCircleFill
   },
@@ -60,7 +55,7 @@ export const languages: ISkill[] = [
     Icon:BsCircleFill
   },
   {
-    name:'Java Script',
+    name:'Java Script(TypeScript)',
     level: '70%',
     Icon:BsCircleFill
   },
@@ -75,7 +70,7 @@ export const languages: ISkill[] = [
     Icon:BsCircleFill
   },
   {
-    name:'php',
+    name:'php(wordpress)',
     level: '50%',
     Icon:BsCircleFill
   },
@@ -103,6 +98,11 @@ export const tools: ISkill[] = [
     Icon:BsCircleFill
   },
   {
+    name:'jest、cypress',
+    level: '60%',
+    Icon:BsCircleFill
+  },
+  {
     name:'Miro',
     level: '70%',
     Icon:BsCircleFill
@@ -115,7 +115,7 @@ export const tools: ISkill[] = [
 ]
 
 export const projects: IProject[] = [
-  { 
+  {
     name: "COVID Tracker",
     description:
       "This app shows a statistical view about corona virus over the world",

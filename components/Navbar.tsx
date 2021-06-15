@@ -56,6 +56,7 @@ const Navbar = () => {
           name='Projects' 
           route='/projects'
         />
+        {/* <a href="/blog">Blog</a> */}
       </div>
     </div>
   )

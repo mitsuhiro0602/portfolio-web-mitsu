@@ -22,4 +22,4 @@ export interface IProject {
   key_techs: string[];
 }
 
-export type Category = "react" | "django" | "wordpress" | "LP"
+export type Category = "react" | "django" | "wordpress" | "LP" | "Next.js"
