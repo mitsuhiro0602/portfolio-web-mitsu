@@ -1,9 +1,15 @@
-import { GetServerSidePropsContext, GetStaticPropsContext } from 'next';
+import {
+  GetServerSidePropsContext,
+  GetStaticPropsContext,
+  NextPage
+} from 'next';
 import ServiceCard from '../components/ServiceCard';
 import { services } from "../data";
+import { motion } from 'framer-motion';
+import { fadeInUp, stagger } from '../animations';
 
-const index = () => {
-  console.log(services)
+
+const About: NextPage = () => {
   return (
     <div className="flex flex-col flex-grow px-6 pt-1">
       <h5 className="my-3 font-medium">
@@ -14,20 +20,30 @@ const index = () => {
       </h5>
       <div className="flex-grow p-4 mt-5 bg-gray-400 dark:bg-dark-100"
         style={{ marginLeft: '-1.5rem', marginRight: '-1.5rem' }}>
-        <h6 className="my-3 text-xl font-bold">What I offer</h6>
-        <div className="grid gap-6 lg:grid-cols-2">
+        <h4 className="my-3 text-xl font-bold">What I offer</h4>
+        <motion.div 
+          className="grid gap-6 lg:grid-cols-2" 
+          variants={stagger} 
+          initial="initial" 
+          animate="animate"
+        >
+          {/* children's initial and animate property should be same as the parent during a stagger effect */}
           {services.map((service) => (
-            <div className="bg-gray-200 rounded-lg dark:bg-dark-200 lg:col-span-1 ">
+            <motion.div
+              className="col-span-2 p-2 bg-gray-200 rounded-lg dark:bg-dark-200 md:col-span-1 "
+              variants={fadeInUp}
+              key={service.title}
+            >
               <ServiceCard service={service} />
-            </div>
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
       </div>
     </div>
   )
 }
 
-export default index
+export default About;
 
 // export const getServersideProps = async(
 //   context: GetServerSidePropsContext
