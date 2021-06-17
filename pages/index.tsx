@@ -12,7 +12,7 @@ import { fadeInUp, routeAnimation, stagger } from '../animations';
 const About = ({endpoint}) => {
   console.log(endpoint)
   return (
-    <motion.div 
+    <motion.div
       variants={routeAnimation} 
       initial="animate"
       exit="exit"
