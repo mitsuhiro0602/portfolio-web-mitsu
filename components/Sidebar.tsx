@@ -32,9 +32,10 @@ const Sidebar = () => {
         </p>
         <a 
           className="flex items-center justify-center px-2 py-1 my-3 bg-gray-200 rounded-full dark:bg-dark-200 dark:bg-black-500"
-          href=""
-          download="name">
-          <GiTie  className="w-6 h-6" />Download Resume
+          href="/images/blink.jpg"
+          download="blinnk.jpg">
+          <GiTie  className="w-6 h-6" />
+          <span>Download Resume</span>
         </a>
         {/* social icon */}
       </div>
@@ -56,7 +57,7 @@ const Sidebar = () => {
           <span>神奈川県横浜市在住</span>
         </div>
           <p className="my-2">mail@hack-log.com</p>
-          <p className="my-2">90530353850</p>
+          {/* <p className="my-2">90530353850</p> */}
       </div>
       {/* Email Button */}
       <button

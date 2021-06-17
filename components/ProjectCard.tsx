@@ -8,6 +8,8 @@ import { motion } from 'framer-motion';
 
 const ProjectCard:FunctionComponent<{
   project: IProject;
+  showDetail: null | number;
+  setShowDetail: (id:null | number) => void;
 }> = ({ 
   project: {
     name,
@@ -16,10 +18,12 @@ const ProjectCard:FunctionComponent<{
     deployed_url,
     description,
     github_url,
-    key_techs
-  }
+    key_techs,
+    id,
+  },
+  showDetail,
+  setShowDetail,
 }) => {
-  const [showDetail, setShowDetail] = useState(false);
   return (
     <div>
       {/* <img src={image_path} alt={name} className="cursor-pointer" onClick={()=>setShowDetail(true)} /> */}
@@ -27,19 +31,24 @@ const ProjectCard:FunctionComponent<{
         src={image_path}
         alt={name}
         className="cursor-pointer"
-        onClick={()=>setShowDetail(true)}
+        onClick={()=>setShowDetail(id)}
         width="300"
         height="150px"
         layout="responsive"
       />
       <p className="my-2 text-center">{name}</p>
-        { showDetail && (
+        { showDetail === id && (
           <motion.div 
             variants={stagger} 
             initial="initial" 
             animate="animate"
-            className="absolute top-0 left-0 z-10 grid w-full h-auto p-2 text-black bg-gray-100 md:grid-cols-2 gap-x-12 dark:text-white dark:bg-dark-100">
-            <motion.div variants={stagger} initial="initial" animate="animate">
+            className="absolute top-0 left-0 z-10 grid w-full h-auto p-2 bg-gray-100 rounded-lg tex-t-black md:p-10 md:grid-cols-2 gap-x-12 dark:text-white dark:bg-dark-100">
+            <motion.div 
+              variants={stagger} 
+              initial="initial" 
+              animate="animate"
+              className="bg-gray-100 border-4 border-gray-100"
+            >
               {/* <img src={image_path} alt={name} /> */}
               <Image
                 src={image_path}
@@ -79,7 +88,7 @@ const ProjectCard:FunctionComponent<{
                 }
               </motion.div>
             </motion.div>
-            <button onClick={()=>setShowDetail(false)}
+            <button onClick={()=>setShowDetail(null)}
               className="absolute bg-gray-200 rounded-full top-3 right-3 focus:outline-none dark:bg-dark-200"
             >
               <MdClose size={30} />
