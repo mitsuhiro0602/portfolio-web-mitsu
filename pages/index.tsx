@@ -9,7 +9,8 @@ import { motion } from 'framer-motion';
 import { fadeInUp, routeAnimation, stagger } from '../animations';
 
 
-const About: NextPage = () => {
+const About = ({endpoint}) => {
+  console.log(endpoint)
   return (
     <motion.div 
       variants={routeAnimation} 
@@ -50,23 +51,19 @@ const About: NextPage = () => {
 
 export default About;
 
-// export const getServersideProps = async(
-//   context: GetServerSidePropsContext
-// ) => {
+// !called every time the page refreshed
+export const getServersideProps = async(
+  context: GetServerSidePropsContext
+) => {
+  // console.log(process.env.VERCEL_URL)
   
-//   // calculation
-//   const res = await fetch('http://localhost:3000/api/services')
-//   const data = await res.json()
+  // // calculation
+  // const res = await fetch(`${process.env.VERCEL_URL}/api/services`)
+  // const data = await res.json()
+  return { props: { endpoint: process.env.VERCEL_URL }};
+};
 
-//   console.log('SERVER', services)
-
-//   return {
-//     props: {
-//       services: data.services,
-//     },
-
-//   }
-// }
+// !called only during the build of the project
 // export const getStaticProps = async(
 //   context: GetStaticPropsContext
 // ) => {
