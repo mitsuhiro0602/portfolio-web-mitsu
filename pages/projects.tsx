@@ -5,6 +5,7 @@ import { projects as projectsData } from "../data";
 import { Category } from "../type";
 import { motion } from 'framer-motion';
 import { fadeInUp, routeAnimation, stagger } from '../animations';
+import Head from 'next/head';
 
 const Projects = () => {
   const [projects, setProjects] = useState(projectsData);
@@ -32,7 +33,13 @@ const Projects = () => {
       initial="initial"
       animate="animate"
       exit="exit"
-      className="px-5 py-2 overflow-y-scroll" style={{ height: "65vh" }}>
+      className="px-5 py-2 overflow-y-scroll" style={{ height: "65vh" }}
+    >
+      <Head>
+        <title>
+          プロジェクト
+        </title>
+      </Head>
       <ProjectsNavbar
         handlerFilterCategory={handlerFilterCategory}
         active={active}

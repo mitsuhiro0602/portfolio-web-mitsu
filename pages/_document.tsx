@@ -10,6 +10,14 @@ class MyDocument extends Document {
             href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap"
             rel="stylesheet"
           />
+          <meta
+           name="description"
+           content="Mitsuhiro Ookochi web engineer portfolio"
+          />
+          <meta
+            name="keywords"
+            content="ポートフォリオ, フロントエンジニア, LP作成, オウンドメディア構築, アプリ開発"
+          />
         </Head>
         <body className="bg-fixed bg-gradient-to-r from-green to-blue-500 dark:from-dark-500 dark:to-dark-700 dark:text-white">
           <Main />

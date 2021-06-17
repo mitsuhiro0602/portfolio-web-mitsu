@@ -7,10 +7,11 @@ import ServiceCard from '../components/ServiceCard';
 import { services } from "../data";
 import { motion } from 'framer-motion';
 import { fadeInUp, routeAnimation, stagger } from '../animations';
+import Head from 'next/head';
 
 
 const About = ({endpoint}) => {
-  console.log(endpoint)
+  // console.log(endpoint)
   return (
     <motion.div
       variants={routeAnimation} 
@@ -18,6 +19,11 @@ const About = ({endpoint}) => {
       exit="exit"
       className="flex flex-col flex-grow px-6 pt-1"
     >
+      <Head>
+        <title>
+          Mitsuhiro Ookochi ポートフォリオ
+        </title>
+      </Head>
       <h6 className="my-3 text-base font-medium">
         I am currently pursuring B.Tech Degree(Final Year) in Cimputer
         Science Engineering from Academy of Technology. I have 3+ years of
