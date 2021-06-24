@@ -1,5 +1,4 @@
 import { useState, useEffect, FunctionComponent} from "react";
-
 import { useRouter } from "next/router";
 import Link from 'next/link';
 
@@ -33,6 +32,7 @@ const Navbar = () => {
     if(pathname === "/") setActiveItem('About')
     else if(pathname === "/projects") setActiveItem('Projects')
     else if(pathname === "/resume") setActiveItem('Resume')
+    else if(pathname === "/contact") setActiveItem('Contact')
 
   }, [])
   return (
@@ -56,6 +56,18 @@ const Navbar = () => {
           name='Projects' 
           route='/projects'
         />
+        <NavItem activeItem={activeItem} 
+          setActiveItem={setActiveItem} 
+          name='Contact' 
+          route='/contact'
+        />
+        <Link href="https://web-hack.net/">
+          <a>
+            <span className="hover:text-green">
+              Blog
+            </span>
+          </a>
+        </Link>
         {/* <a href="/blog">Blog</a> */}
       </div>
     </div>
