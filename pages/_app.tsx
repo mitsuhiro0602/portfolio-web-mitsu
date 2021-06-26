@@ -3,7 +3,6 @@ import '../styles/globals.css'
 import Navbar from '../components/Navbar';
 import {ThemeProvider} from 'next-themes'
 import { AnimatePresence } from 'framer-motion';
-import router from 'next/router';
 
 function MyApp({ Component, pageProps, router }) {
   return (

@@ -8,6 +8,7 @@ import { services } from "../data";
 import { motion } from 'framer-motion';
 import { fadeInUp, routeAnimation, stagger } from '../animations';
 import Head from 'next/head';
+import Contact from '../components/Contact';
 
 
 const About = ({endpoint}) => {
@@ -49,6 +50,12 @@ const About = ({endpoint}) => {
               <ServiceCard service={service} />
             </motion.div>
           ))}
+        </motion.div>
+        <motion.div
+          className="col-span-2 p-2 py-4 pl-6 my-4 rounded-lg pybg-gray-200 dark:bg-dark-200 md:col-span-1 lg:px-88"
+          variants={fadeInUp}
+        >
+          <Contact/>
         </motion.div>
       </div>
     </motion.div>

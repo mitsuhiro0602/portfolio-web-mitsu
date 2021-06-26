@@ -56,11 +56,11 @@ const Navbar = () => {
           name='Projects' 
           route='/projects'
         />
-        <NavItem activeItem={activeItem} 
-          setActiveItem={setActiveItem} 
-          name='Contact' 
-          route='/contact'
-        />
+        <Link href="https://chatbot-login-25188.web.app/">
+          <a>
+            <span className="hover:text-green">Contact</span>
+          </a>
+        </Link>
         <Link href="https://web-hack.net/">
           <a>
             <span className="hover:text-green">

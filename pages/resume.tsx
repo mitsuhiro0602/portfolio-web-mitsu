@@ -3,6 +3,8 @@ import { languages, tools } from '../data';
 import { motion } from 'framer-motion';
 import { fadeInUp, routeAnimation } from "../animations";
 import Head from 'next/head';
+import Contact from "../components/Contact";
+
 const resume = () => {
 
   return (
@@ -64,6 +66,12 @@ const resume = () => {
               <Bar data={tool} key={tool.name} />
             ))}
           </div>
+        </motion.div>
+        <motion.div
+          className="col-span-2 p-2 py-4 pl-6 my-4 rounded-lg pybg-gray-200 dark:bg-dark-200 md:col-span-1 lg:px-88"
+          variants={fadeInUp}
+        >
+          <Contact/>
         </motion.div>
         
       </div>
