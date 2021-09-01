@@ -138,25 +138,25 @@ export const projects: IProject[] = [
     key_techs: ["React", "express", "Graphql", "tailwindcss"],
   },
 
-  // {
-  //   id:3,
-  //   name: "Dev Talks",
-  //   image_path: "/images/dev.jpg",
-  //   deployed_url: "https://dev-talks.herokuapp.com/",
-  //   github_url: "https://github.com/Dey-Sumit/Dev-talks",
-  //   category: ["django", "react"],
-  //   description:
-  //     "Social Media app for developers who can share project,create posts,etc...",
-  //   key_techs: [
-  //     "React",
-  //     "Redux",
-  //     "Node",
-  //     "Express",
-  //     "Mongo",
-  //     "REST API",
-  //     "Bootstrap",
-  //   ],
-  // },
+  {
+    id:3,
+    name: "Dev Talks",
+    image_path: "/images/blog.png",
+    deployed_url: "https://www.web-hack.net/",
+    github_url: "https://github.com/Dey-Sumit/Dev-talks",
+    category: ["Next.js"],
+    description:
+      "Social Media app for developers who can share project,create posts,etc...",
+    key_techs: [
+      "React",
+      "Redux",
+      "Node",
+      "Express",
+      "Mongo",
+      "REST API",
+      "Bootstrap",
+    ],
+  },
 
   // {
   //   id:4,
