@@ -140,22 +140,14 @@ export const projects: IProject[] = [
 
   {
     id:3,
-    name: "Dev Talks",
+    name: "WEB-HACK",
     image_path: "/images/blog.png",
     deployed_url: "https://www.web-hack.net/",
-    github_url: "https://github.com/Dey-Sumit/Dev-talks",
+    github_url: "https://github.com/mitsuhiro0602/nextjs_blog/blob/main/README.md",
     category: ["Next.js"],
     description:
-      "Social Media app for developers who can share project,create posts,etc...",
-    key_techs: [
-      "React",
-      "Redux",
-      "Node",
-      "Express",
-      "Mongo",
-      "REST API",
-      "Bootstrap",
-    ],
+      "技術ブログの作成",
+    key_techs: ["Next.js"],
   },
 
   // {
