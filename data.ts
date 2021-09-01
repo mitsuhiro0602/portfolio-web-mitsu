@@ -71,11 +71,11 @@ export const languages: ISkill[] = [
   },
   {
     name:'php(wordpress)',
-    level: '50%',
+    level: '70%',
     Icon:BsCircleFill
   },
   {
-    name:'Express(nest)',
+    name:'Express',
     level: '50%',
     Icon:BsCircleFill
   },
@@ -99,7 +99,7 @@ export const tools: ISkill[] = [
   },
   {
     name:'jest',
-    level: '60%',
+    level: '50%',
     Icon:BsCircleFill
   },
   {
@@ -115,28 +115,28 @@ export const tools: ISkill[] = [
 ]
 
 export const projects: IProject[] = [
-  // {
-  //   id:1,
-  //   name: "COVID Tracker",
-  //   description:
-  //     "This app shows a statistical view about corona virus over the world",
-  //   image_path: "/images/covid.jpg",
-  //   deployed_url: "https://covid-19-tracker-by-sumit.web.app/",
-  //   github_url: "https://github.com/Dey-Sumit/covid-19-tracker",
-  //   category: ["react"],
-  //   key_techs: ["React", "Chart.js", "Material UI"],
-  // },
-  // {
-  //   id:2,
-  //   name: "Algorithm Visualizer",
-  //   image_path: "/images/algoVisual.png",
-  //   deployed_url: "https://visual-algorithm.web.app/",
-  //   github_url: "https://github.com/Dey-Sumit/algorithm-visualizer",
-  //   category: ["react"],
-  //   description:
-  //     "An web app which shows how an algorithm (path finding or sorting) works with cool animation",
-  //   key_techs: ["React", "firebase", "Framer Motion"],
-  // },
+  {
+    id:1,
+    name: "グランパー",
+    image_path: "/images/covid.jpg",
+    deployed_url: "https://glamping-book-client-1582amxeg-mitsuhiro0602.vercel.app",
+    github_url: "https://github.com/mitsuhiro0602/glamping-book-client",
+    category: ["react", "express"],
+    description:
+      "グランピング施設の予約、検索サイトです。",
+    key_techs: ["React", "express", "tailwindcss" , "tailwindcss"],
+  },
+  {
+    id:2,
+    name: "アウトドアファミリー",
+    image_path: "/images/algoVisual.png",
+    deployed_url: "https://design-collect-client.herokuapp.com/",
+    github_url: "https://github.com/Dey-Sumit/algorithm-visualizer",
+    category: ["react", "express"],
+    description:
+      "ファミリー向けアウトドア共有SNSです。家族の思い出や休日を共有できます。",
+    key_techs: ["React", "express", "Graphql", "tailwindcss"],
+  },
 
   // {
   //   id:3,
