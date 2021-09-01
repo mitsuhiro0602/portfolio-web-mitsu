@@ -150,29 +150,29 @@ export const projects: IProject[] = [
     key_techs: ["Next.js"],
   },
 
-  // {
-  //   id:4,
-  //   name: "Realtime Chat App",
-  //   image_path: "/images/chatapp.jpg",
-  //   deployed_url: "https://sumit-chat.netlify.app/",
-  //   github_url: "https://github.com/Dey-Sumit/chat-app-socket.io-react-node",
-  //   category: ["django", "react"],
-  //   description:
-  //     "Basic Realtime Chat App where one can create a room can talk to each other",
-  //   key_techs: ["React", "Node", "Express", "Socket", "Bootstrap"],
-  // },
+  {
+    id:4,
+    name: "Realtime Chat Bot",
+    image_path: "/images/chatbot.png",
+    deployed_url: "https://chatbot-login-25188.web.app/",
+    github_url: "https://github.com/mitsuhiro0602/chatbot-demo",
+    category: ["react"],
+    description:
+      "お問い合わせ専用のチャットbotを作成。slackと提携してリクエストを飛ばすとslackに通知がきます",
+    key_techs: ["React", "firebase"],
+  },
 
-  // {
-  //   id:5,
-  //   name: "Tweeter Clone",
-  //   image_path: "/images/tweetme.jpg",
-  //   deployed_url: "http://sumaxtweetme.pythonanywhere.com/",
-  //   github_url: "https://github.com/Dey-Sumit/tweetme",
-  //   category: ["django", "react"],
-  //   description:
-  //     "First Django Project :) | Typical Social Media App where one can post,like ,comment etc",
-  //   key_techs: ["React", "Django", "Django REST API"],
-  // },
+  {
+    id:5,
+    name: "ECアプリ",
+    image_path: "/images/ec-app.png",
+    deployed_url: "https://ec-app-3b8bd.web.app/",
+    github_url: "https://github.com/mitsuhiro0602/ec-app",
+    category: ["react"],
+    description:
+      "在宅勤務の方のためのECサイトでもです。",
+    key_techs: ["React"],
+  },
 
   // {
   //   id:6,
